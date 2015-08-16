@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.psocha.goclock.activities.OptionsActivity"
+                android:background="@color/background_material_dark">
+
+    <CheckBox
+        android:id="@+id/checkboxHaptic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/haptic_label"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="52dp"
+        android:checked="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/TextOptionsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Options"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/checkboxHaptic"
+        android:layout_alignStart="@+id/checkboxHaptic"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_exit"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="saveButtonPressed"/>
+
+    <RadioGroup android:id="@+id/toggleGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/checkboxHaptic"
+                android:layout_alignLeft="@+id/checkboxHaptic"
+                android:layout_alignStart="@+id/checkboxHaptic">
+
+        <RadioButton
+            android:id="@+id/radioDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_background"/>
+
+        <RadioButton
+            android:id="@+id/radioLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/light_background"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

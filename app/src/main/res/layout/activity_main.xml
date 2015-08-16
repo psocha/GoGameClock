@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent" android:layout_height="fill_parent"
+              android:id="@+id/layoutContainer" android:orientation="horizontal"
+              android:background="@color/background_main">
+    <RelativeLayout
+        android:id="@+id/whiteClockButton"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:onClick="clockButtonPressed">
+
+        <View
+            android:id="@+id/whiteStone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_stone"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:id="@+id/whiteDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:background="@color/button_material_dark">
+
+            <TextView
+                android:id="@+id/whiteTime"
+                android:tag="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:15:31"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:lines="1"
+                android:textSize="64sp"/>
+
+            <TextView
+                android:id="@+id/whiteDescription"
+                android:tag="description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Time"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/whiteTimeSetting"
+                android:tag="timeSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:00 + 6*0:30"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_options"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="optionsButtonPressed"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.2">
+
+        <Button
+            android:id="@+id/buttonToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_start"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:onClick="toggleButtonClicked"/>
+
+        <Button
+            android:id="@+id/buttonConfigure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_configure"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="configureButtonPressed"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/blackClockButton"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
+        android:onClick="clockButtonPressed">
+
+        <View
+            android:id="@+id/blackStone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/black_stone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:id="@+id/blackDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="8dp"
+            android:background="@color/button_material_dark">
+
+            <TextView
+                android:id="@+id/blackTime"
+                android:tag="time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:15:31"
+                android:gravity="center_horizontal"
+                android:paddingBottom="6dp"
+                android:lines="1"
+                android:textSize="64sp"/>
+
+            <TextView
+                android:id="@+id/blackDescription"
+                android:tag="description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Time"
+                android:gravity="center_horizontal"
+                android:paddingBottom="4dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/blackTimeSetting"
+                android:tag="timeSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1:00 + 6*0:30"
+                android:gravity="center_horizontal"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_reset"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="resetButtonPressed"/>
+
+    </RelativeLayout>
+</LinearLayout>

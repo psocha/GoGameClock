@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_main">#ff1f0f0f</color>
+    <color name="background_main_light">#C9A670</color>
+
+    <color name="dark_grey">#202020</color>
+    <color name="white_go_stone">#ffffff</color>
+    <color name="black_go_stone">#000000</color>
+
+    <color name="active_yellow">#FFFF00</color>
+    <color name="timeout">#FF0000</color>
+
+    <color name="transparent">#00000000</color>
+</resources>
