@@ -2,8 +2,6 @@ package com.psocha.goclock.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.RadioButton;
