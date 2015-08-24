@@ -61,7 +61,7 @@ public class ConfigurationActivity extends Activity {
                 NumberPicker picker = (NumberPicker)view;
                 picker.setMinValue(0);
                 picker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
-                picker.setOnLongPressUpdateInterval(150);
+                picker.setOnLongPressUpdateInterval(100);
                 String tag = picker.getTag().toString();
                 if (tag.equals("mainTimeHours") || tag.equals("secondaryTimeHours") || tag.equals("singleInput")) {
                     picker.setMaxValue(99);
