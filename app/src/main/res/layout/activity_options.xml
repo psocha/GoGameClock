@@ -52,16 +52,16 @@
                 android:layout_alignStart="@+id/checkboxHaptic">
 
         <RadioButton
-            android:id="@+id/radioDark"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/dark_background"/>
-
-        <RadioButton
             android:id="@+id/radioLight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/light_background"
+            android:text="@string/light_background"/>
+
+        <RadioButton
+            android:id="@+id/radioDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dark_background"
             android:layout_marginLeft="24dp"
             android:layout_marginStart="24dp"/>
 
