@@ -225,9 +225,11 @@ public class MainActivity extends Activity {
         TextView blackTime = (TextView)findViewById(R.id.blackTime);
         blackTime.setText(gameStatus.getBlackTime().clockTime());
         if (blackTime.getText().length() > 5) {
-            blackTime.setTextSize(TypedValue.COMPLEX_UNIT_SP, 48);
+            blackTime.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                    getResources().getDimension(R.dimen.font_size_time_small));
         } else {
-            blackTime.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
+            blackTime.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                    getResources().getDimension(R.dimen.font_size_time_large));
         }
 
         TextView blackExplanation = (TextView)findViewById(R.id.blackDescription);
@@ -239,10 +241,13 @@ public class MainActivity extends Activity {
         // White.
         TextView whiteTime = (TextView)findViewById(R.id.whiteTime);
         whiteTime.setText(gameStatus.getWhiteTime().clockTime());
+
         if (whiteTime.getText().length() > 5) {
-            whiteTime.setTextSize(TypedValue.COMPLEX_UNIT_SP, 48);
+            whiteTime.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                    getResources().getDimension(R.dimen.font_size_time_large));
         } else {
-            whiteTime.setTextSize(TypedValue.COMPLEX_UNIT_SP, 64);
+            whiteTime.setTextSize(TypedValue.COMPLEX_UNIT_PX,
+                    getResources().getDimension(R.dimen.font_size_time_large));
         }
 
         TextView whiteExplanation = (TextView)findViewById(R.id.whiteDescription);

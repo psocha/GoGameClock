@@ -15,7 +15,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/font_size_activity_title"
+            android:textColor="@color/white_go_stone"
             android:text="@string/configuration_title"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
@@ -29,6 +30,7 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
+            android:textSize="@dimen/font_size_save_and_return"
             android:onClick="saveButtonPressed"/>
 
     </RelativeLayout>

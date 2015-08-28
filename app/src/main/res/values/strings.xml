@@ -16,6 +16,7 @@
     <string name="sudden_death">Sudden Death</string>
 
     <string name="title_activity_options">OptionsActivity</string>
+    <string name="options_title">Options</string>
     <string name="action_settings">Settings</string>
     <string name="haptic_label">Haptic feedback when player switches</string>
     <string name="dark_background">Dark background</string>

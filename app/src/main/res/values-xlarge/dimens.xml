@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_size_time_large">120sp</dimen>
+    <dimen name="font_size_time_small">90sp</dimen>
+    <dimen name="font_size_description">18sp</dimen>
+    <dimen name="font_size_explanation">16sp</dimen>
+    <dimen name="font_size_main_control_button">24sp</dimen>
+    <dimen name="font_size_activity_title">40sp</dimen>
+    <dimen name="font_size_save_and_return">24sp</dimen>
+</resources>
