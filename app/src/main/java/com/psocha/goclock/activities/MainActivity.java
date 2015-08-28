@@ -36,8 +36,6 @@ public class MainActivity extends Activity {
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
-        loadGameStatus();
-
         toggleButton = (Button)findViewById(R.id.buttonToggle);
         optionsButton = (Button)findViewById(R.id.buttonOptions);
         configurationButton = (Button)findViewById(R.id.buttonConfigure);
@@ -45,6 +43,8 @@ public class MainActivity extends Activity {
         toggleControlButtons(true);
 
         loadBackground();
+
+        loadGameStatus();
     }
 
     @Override
@@ -276,7 +276,7 @@ public class MainActivity extends Activity {
         }
 
         if (gameStatus.gameState == GameStatus.GAME_STATE.GAME_STATE_TIMEOUT) {
-            Button toggleButton = (Button)findViewById(R.id.buttonToggle);
+            pause();
             toggleButton.setText(R.string.menu_reset);
         }
     }
