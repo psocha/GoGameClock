@@ -95,23 +95,24 @@ public class MainActivity extends Activity {
     }
 
     public void optionsButtonPressed(View button) {
+        giveHapticFeedbackIfEnabled(button);
         Intent intent = new Intent(this, OptionsActivity.class);
         startActivity(intent);
     }
 
     public void configureButtonPressed(View button) {
+        giveHapticFeedbackIfEnabled(button);
         Intent intent = new Intent(this, ConfigurationActivity.class);
         startActivity(intent);
     }
 
     public void resetButtonPressed(View button) {
+        giveHapticFeedbackIfEnabled(button);
         reset();
     }
 
     public void toggleButtonClicked(View button) {
-        if (isHapticFeedbackEnabled()) {
-            toggleButton.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
-        }
+        giveHapticFeedbackIfEnabled(button);
 
         switch (gameStatus.gameState) {
             case GAME_STATE_INACTIVE:
@@ -139,9 +140,9 @@ public class MainActivity extends Activity {
                 !is_black && gameStatus.currentTurn == GameStatus.CURRENT_TURN.CURRENT_TURN_BLACK) {
             return;
         }
-        if (isHapticFeedbackEnabled()) {
-            clockButton.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
-        }
+
+        giveHapticFeedbackIfEnabled(clockButton);
+
         gameStatus.toggleTurn();
 
         if (is_black) {
@@ -281,9 +282,12 @@ public class MainActivity extends Activity {
         }
     }
 
-    private boolean isHapticFeedbackEnabled() {
+    private void giveHapticFeedbackIfEnabled(View view) {
         SharedPreferences settings = getSharedPreferences(OptionsActivity.OPTIONS_SETTINGS, 0);
-        return settings.getBoolean(OptionsActivity.HAPTIC_FEEDBACK, true);
+        boolean enabled = settings.getBoolean(OptionsActivity.HAPTIC_FEEDBACK, true);
+        if (enabled) {
+            view.performHapticFeedback(HapticFeedbackConstants.LONG_PRESS);
+        }
     }
 
     private void loadBackground() {
