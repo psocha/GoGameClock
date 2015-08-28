@@ -53,7 +53,7 @@ public class CanadianPlayerTimeStatus implements PlayerTimeStatus {
     }
 
     public boolean isTimedOut() {
-        return mainTime <= 0 && periodTime == 0 && stonesLeft > 0;
+        return mainTime <= 0 && periodTime <= 0;
     }
 
     public String clockTime() {
