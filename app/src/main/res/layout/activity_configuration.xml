@@ -85,126 +85,6 @@
             android:orientation="horizontal">
 
             <RelativeLayout
-                android:id="@+id/blackTimeLayout"
-                android:layout_width="0dip"
-                android:layout_height="fill_parent"
-                android:layout_weight="0.5"
-                android:background="@drawable/border">
-
-                <TextView
-                    android:id="@+id/blackLabel"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:textAppearance="?android:attr/textAppearanceMedium"
-                    android:gravity="center_horizontal"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="10dp"
-                    android:text="@string/black"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"/>
-
-                <TextView
-                    android:id="@+id/blackLabelMainTime"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/main_time"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/blackLabel"
-                    android:paddingLeft="5dp"/>
-
-                <NumberPicker
-                    android:id="@+id/blackMainTimeHours"
-                    android:tag="mainTimeHours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/blackLabelMainTime"
-                    android:paddingBottom="10dp"/>
-
-                <NumberPicker
-                    android:id="@+id/blackMainTimeMinutes"
-                    android:tag="mainTimeMinutes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/blackMainTimeHours"
-                    android:layout_toRightOf="@+id/blackMainTimeHours"
-                    android:layout_toEndOf="@+id/blackMainTimeHours"/>
-
-                <NumberPicker
-                    android:id="@+id/blackMainTimeSeconds"
-                    android:tag="mainTimeSeconds"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/blackMainTimeMinutes"
-                    android:layout_toRightOf="@+id/blackMainTimeMinutes"
-                    android:layout_toEndOf="@+id/blackMainTimeMinutes"/>
-
-                <TextView
-                    android:id="@+id/blackLabelSingle"
-                    android:tag="singleLabel"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/num_periods"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@id/blackMainTimeHours"
-                    android:paddingLeft="5dp"/>
-
-                <NumberPicker
-                    android:id="@+id/blackSingleInput"
-                    android:tag="singleInput"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/blackLabelSingle"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:paddingBottom="10dp"/>
-
-                <TextView
-                    android:id="@+id/blackLabelSecondaryTime"
-                    android:tag="secondaryLabel"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/period_length"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:layout_below="@+id/blackSingleInput"
-                    android:paddingLeft="5dp"/>
-
-                <NumberPicker
-                    android:id="@+id/blackSecondaryTimeHours"
-                    android:tag="secondaryTimeHours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/blackLabelSecondaryTime"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:paddingBottom="10dp"/>
-
-                <NumberPicker
-                    android:id="@+id/blackSecondaryTimeMinutes"
-                    android:tag="secondaryTimeMinutes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/blackSecondaryTimeHours"
-                    android:layout_toRightOf="@+id/blackSecondaryTimeHours"
-                    android:layout_toEndOf="@+id/blackSecondaryTimeHours"/>
-
-                <NumberPicker
-                    android:id="@+id/blackSecondaryTimeSeconds"
-                    android:tag="secondaryTimeSeconds"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@+id/blackSecondaryTimeMinutes"
-                    android:layout_toRightOf="@+id/blackSecondaryTimeMinutes"
-                    android:layout_toEndOf="@+id/blackSecondaryTimeMinutes"/>
-
-            </RelativeLayout>
-
-            <RelativeLayout
                 android:id="@+id/whiteTimeLayout"
                 android:layout_width="0dip"
                 android:layout_height="fill_parent"
@@ -321,6 +201,126 @@
                     android:layout_alignTop="@+id/whiteSecondaryTimeMinutes"
                     android:layout_toRightOf="@+id/whiteSecondaryTimeMinutes"
                     android:layout_toEndOf="@+id/whiteSecondaryTimeMinutes"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/blackTimeLayout"
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.5"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/blackLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/black"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/blackLabelMainTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_time"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/blackLabel"
+                    android:paddingLeft="5dp"/>
+
+                <NumberPicker
+                    android:id="@+id/blackMainTimeHours"
+                    android:tag="mainTimeHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/blackLabelMainTime"
+                    android:paddingBottom="10dp"/>
+
+                <NumberPicker
+                    android:id="@+id/blackMainTimeMinutes"
+                    android:tag="mainTimeMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/blackMainTimeHours"
+                    android:layout_toRightOf="@+id/blackMainTimeHours"
+                    android:layout_toEndOf="@+id/blackMainTimeHours"/>
+
+                <NumberPicker
+                    android:id="@+id/blackMainTimeSeconds"
+                    android:tag="mainTimeSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/blackMainTimeMinutes"
+                    android:layout_toRightOf="@+id/blackMainTimeMinutes"
+                    android:layout_toEndOf="@+id/blackMainTimeMinutes"/>
+
+                <TextView
+                    android:id="@+id/blackLabelSingle"
+                    android:tag="singleLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/num_periods"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/blackMainTimeHours"
+                    android:paddingLeft="5dp"/>
+
+                <NumberPicker
+                    android:id="@+id/blackSingleInput"
+                    android:tag="singleInput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blackLabelSingle"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/blackLabelSecondaryTime"
+                    android:tag="secondaryLabel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/period_length"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/blackSingleInput"
+                    android:paddingLeft="5dp"/>
+
+                <NumberPicker
+                    android:id="@+id/blackSecondaryTimeHours"
+                    android:tag="secondaryTimeHours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/blackLabelSecondaryTime"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingBottom="10dp"/>
+
+                <NumberPicker
+                    android:id="@+id/blackSecondaryTimeMinutes"
+                    android:tag="secondaryTimeMinutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/blackSecondaryTimeHours"
+                    android:layout_toRightOf="@+id/blackSecondaryTimeHours"
+                    android:layout_toEndOf="@+id/blackSecondaryTimeHours"/>
+
+                <NumberPicker
+                    android:id="@+id/blackSecondaryTimeSeconds"
+                    android:tag="secondaryTimeSeconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/blackSecondaryTimeMinutes"
+                    android:layout_toRightOf="@+id/blackSecondaryTimeMinutes"
+                    android:layout_toEndOf="@+id/blackSecondaryTimeMinutes"/>
 
             </RelativeLayout>
 
